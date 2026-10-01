@@ -394,6 +394,23 @@ h1 .pix { font-family: var(--f-pixel); font-weight: 700; font-stretch: normal; c
   var currentTon = null, currentCase = null;
   var mashBtn = $("mash"), hint = $("hint"), counter = $("counter");
 
+  // Geluid bij het trekken. Browsers spelen pas geluid af na een klik,
+  // dus het bestand wordt bij de eerste druk op de knop alvast 'ontgrendeld'.
+  var sound = new Audio("wahahauw.mp3");
+  sound.preload = "auto";
+  var soundReady = false;
+  function unlockSound() {
+    if (soundReady) return;
+    soundReady = true;
+    sound.muted = true;
+    var p = sound.play();
+    var reset = function () { sound.pause(); sound.currentTime = 0; sound.muted = false; };
+    if (p && p.then) p.then(reset, function () { sound.muted = false; }); else reset();
+  }
+  function playSound() {
+    try { sound.muted = false; sound.currentTime = 0; var p = sound.play(); if (p && p.catch) p.catch(function () {}); } catch (e) {}
+  }
+
   function show(id) { ["start", "ton", "casus"].forEach(function (s) { $(s).hidden = s !== id; }); window.scrollTo(0, 0); }
 
   function openTon(ton) {
@@ -408,6 +425,7 @@ h1 .pix { font-family: var(--f-pixel); font-weight: 700; font-stretch: normal; c
   }
 
   function mash() {
+    unlockSound();
     if (S.mode === "frozen") { pull(); return; }
     if (S.mode !== "idle" && S.mode !== "mash") return;
     S.mode = "mash";
@@ -442,6 +460,7 @@ h1 .pix { font-family: var(--f-pixel); font-weight: 700; font-stretch: normal; c
     S.mode = "done";
     renderCase(currentCase);
     show("casus");
+    playSound();
   }
 
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }

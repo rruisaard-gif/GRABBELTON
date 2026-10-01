@@ -10,6 +10,7 @@ Studenten kiezen hun expertise (Branding of Content), rammen op de knop tot de h
 |---|---|
 | `index.html` | De grabbelton zelf (animatie, interactie, casusweergave) |
 | `cases.js` | Alle casussen: 15 branding (B01–B15) en 15 content (C01–C15) |
+| `wahahauw.mp3` | Geluid dat afspeelt zodra de casus uit de ton komt |
 
 Geen build-stap, geen dependencies. Werkt ook lokaal door `index.html` te openen.
 
