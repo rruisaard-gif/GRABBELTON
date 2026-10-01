@@ -2,31 +2,30 @@
 
 De grabbelton voor **Achievement 2 – Grabbelton Casus** van de expertisetrack in de minor *Marketing in een online wereld* (RBSMOW01).
 
-Studenten kiezen hun expertise (Branding of Content), rammen op de knop tot de hand diep in de ton graait, laten los en trekken er een casus uit. Op het briefje staat de datum en tijd van trekken.
+Studenten kiezen hun expertise (Branding, Content, AI in Marketing of Consumer Behavior), rammen op de knop tot de hand diep in de ton graait, laten los en trekken er een casus uit. Op het briefje staat de datum en tijd van trekken.
 
 ## Bestanden
 
 | Bestand | Wat |
 |---|---|
 | `index.html` | De grabbelton zelf (animatie, interactie, casusweergave) |
-| `cases.js` | Alle casussen: 15 branding (B01–B15) en 15 content (C01–C15) |
+| `cases.js` | Alle casussen: 15 per expertise (Branding B01–B15, Content C01–C15, AI in Marketing AI01–AI15, Consumer Behavior CB01–CB15) |
 | `wahahauw.mp3` | Geluid dat afspeelt zodra de casus uit de ton komt |
 
 Geen build-stap, geen dependencies. Werkt ook lokaal door `index.html` te openen.
 
 ## Online zetten met GitHub Pages
 
-1. Maak een nieuwe repository aan (bijv. `mieow-grabbelton`) en upload `index.html`, `cases.js` en deze README.
-2. Ga naar **Settings → Pages**.
-3. Kies bij *Source* voor **Deploy from a branch**, branch `main`, map `/ (root)`, en klik **Save**.
-4. Na een minuut staat de ton op `https://<gebruikersnaam>.github.io/mieow-grabbelton/`.
+1. Ga naar **Settings → Pages**.
+2. Kies bij *Source* voor **Deploy from a branch**, branch `main`, map `/ (root)`, en klik **Save**.
+3. Na een minuut staat de ton op `https://rruisaard-gif.github.io/GRABBELTON/`.
 
 ## Een casus toevoegen of aanpassen
 
 Open `cases.js`, kopieer een bestaand blok en pas het aan. Elke casus heeft deze velden:
 
 - `id` – uniek, bijv. `B16` of `C16`
-- `ton` – `"branding"` of `"content"`
+- `ton` – `"branding"`, `"content"`, `"ai"` of `"consumer"`
 - `naam`, `plaats`, `tagline`
 - `wie`, `vraagstuk`, `feiten` (lijst), `eigenaardigheid`, `beperking`, `geprobeerd`
 - `uitdaging` – de creatieve push voor de student

@@ -71,7 +71,7 @@ h1 {
 h1 .pix { font-family: var(--f-pixel); font-weight: 700; font-stretch: normal; color: var(--cyan); font-size: .42em; display: block; letter-spacing: .02em; margin-bottom: .2em; }
 .lead { max-width: 56ch; color: var(--muted); font-size: 18px; margin: 0; }
 .lead strong { color: var(--ink); font-weight: 600; }
-.choose { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; width: 100%; max-width: 640px; }
+.choose { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; width: 100%; max-width: 760px; }
 .tonbtn {
   text-align: left; background: var(--space-2); color: var(--ink);
   border: 2px solid var(--violet); border-radius: 4px;
@@ -189,18 +189,7 @@ h1 .pix { font-family: var(--f-pixel); font-weight: 700; font-stretch: normal; c
     <p class="lead">Ergens in deze ton zit een ondernemer met een probleem waar je nog nooit over hebt nagedacht. <strong>Jij krijgt een week</strong> om je expertise erop los te laten. Wat eruit komt, moet je doen.</p>
     <div>
       <p class="eyebrow cyan" style="margin:0 0 10px">Kies jouw expertise</p>
-      <div class="choose">
-        <button class="tonbtn" id="pick-branding" type="button">
-          <span class="t">Branding</span>
-          <span class="d">Merken die ergens over gaan, ook als het bedrijf raar is.</span>
-          <span class="n" id="n-branding"></span>
-        </button>
-        <button class="tonbtn" id="pick-content" type="button">
-          <span class="t">Content</span>
-          <span class="d">Content die mensen laat stoppen met scrollen.</span>
-          <span class="n" id="n-content"></span>
-        </button>
-      </div>
+      <div class="choose" id="choose"></div>
     </div>
     <div class="rules">
       <div><b>1. Graai</b>Ram op de knop. Hoe harder je drukt, hoe dieper de hand gaat.</div>
@@ -263,9 +252,23 @@ h1 .pix { font-family: var(--f-pixel); font-weight: 700; font-stretch: normal; c
   addEventListener("resize", sizeStars); sizeStars();
 
   // ---------------- data / trekken ----------------
-  ["branding", "content"].forEach(function (t) {
+  // De vier tonnen. Nieuwe ton? Voeg hier een regel toe en geef casussen in cases.js dezelfde 'ton'.
+  var TONS = {
+    branding: { label: "Branding", stamp: "BRANDING", desc: "Merken die ergens over gaan, ook als het bedrijf raar is." },
+    content:  { label: "Content", stamp: "CONTENT", desc: "Content die mensen laat stoppen met scrollen." },
+    ai:       { label: "AI in Marketing", stamp: "AI IN MARKETING", desc: "AI inzetten waar het iets oplevert, en laten waar het niets toevoegt." },
+    consumer: { label: "Consumer Behavior", stamp: "CONSUMER BEHAVIOR", desc: "Snappen waarom mensen doen wat ze doen, en daar iets mee doen." }
+  };
+  Object.keys(TONS).forEach(function (t) {
     var n = CASES.filter(function (c) { return c.ton === t; }).length;
-    $("n-" + t).textContent = n + " casussen in de ton";
+    var b = document.createElement("button");
+    b.className = "tonbtn"; b.type = "button"; b.id = "pick-" + t;
+    b.innerHTML = '<span class="t"></span><span class="d"></span><span class="n"></span>';
+    b.querySelector(".t").textContent = TONS[t].label;
+    b.querySelector(".d").textContent = TONS[t].desc;
+    b.querySelector(".n").textContent = n + " casussen in de ton";
+    b.addEventListener("click", function () { openTon(t); });
+    $("choose").appendChild(b);
   });
   function store(k, v) { try { if (v === undefined) return JSON.parse(localStorage.getItem(k) || "null"); localStorage.setItem(k, JSON.stringify(v)); } catch (e) { return null; } }
   function drawCase(ton) {
@@ -415,7 +418,7 @@ h1 .pix { font-family: var(--f-pixel); font-weight: 700; font-stretch: normal; c
 
   function openTon(ton) {
     currentTon = ton;
-    $("ton-title").textContent = ton === "branding" ? "Branding-ton" : "Content-ton";
+    $("ton-title").textContent = TONS[ton].label + "-ton";
     S.mode = "idle"; S.presses = 0; S.depth = 0; S.target = 0; S.shake = 0; S.holding = false; S.armX = CX;
     counter.textContent = "x 0";
     hint.textContent = "Druk zo vaak als je kunt"; hint.className = "hint";
@@ -469,7 +472,7 @@ h1 .pix { font-family: var(--f-pixel); font-weight: 700; font-stretch: normal; c
   function renderCase(c) {
     var d = c._getrokken;
     $("paper").innerHTML =
-      '<div class="meta"><span class="stamp">' + esc(c.id) + ' · ' + (c.ton === "branding" ? "BRANDING" : "CONTENT") + '</span>' +
+      '<div class="meta"><span class="stamp">' + esc(c.id) + ' · ' + esc(TONS[c.ton].stamp) + '</span>' +
       '<span class="when">Getrokken ' + fmt(d) + ' ' + d.toLocaleTimeString("nl-NL", { hour: "2-digit", minute: "2-digit" }) + '</span></div>' +
       '<h3>' + esc(c.naam) + '</h3><div class="plaats">' + esc(c.plaats) + '</div>' +
       '<p class="tag">' + esc(c.tagline) + '</p>' +
@@ -492,8 +495,6 @@ h1 .pix { font-family: var(--f-pixel); font-weight: 700; font-stretch: normal; c
         "Getrokken: " + c._getrokken.toLocaleString("nl-NL")]).join("\n");
   }
 
-  $("pick-branding").addEventListener("click", function () { openTon("branding"); });
-  $("pick-content").addEventListener("click", function () { openTon("content"); });
   $("back1").addEventListener("click", function () { if (S.mode === "idle" || S.mode === "mash") show("start"); });
   $("restart").addEventListener("click", function () { show("start"); });
   mashBtn.addEventListener("pointerdown", function (e) { e.preventDefault(); mash(); });
