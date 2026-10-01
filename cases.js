@@ -635,22 +635,22 @@ window.CASES = [
 
 {
   id: "AI02", ton: "ai",
-  naam: "Frietje Fred",
-  plaats: "Utrecht",
-  tagline: "Een frietkraam met 47 sauzen. Klanten doen er vier minuten over om te kiezen.",
-  wie: "Fred (52) staat al twintig jaar met zijn kraam op de markt en sinds kort ook bij het station. Hij maakt al zijn sauzen zelf. De rij is lang, maar niet omdat bakken lang duurt.",
-  vraagstuk: "\"Ik verlies klanten aan de rij. Mensen zien hoe lang het duurt en lopen door naar de McDonald's.\"",
+  naam: "Spookhuis Makelaardij",
+  plaats: "Leiden",
+  tagline: "Een makelaar die alleen huizen verkoopt waar het spookt. Of waar mensen dat denken.",
+  wie: "Annelies (47) was gewone makelaar tot ze in 2019 een huis niet verkocht kreeg 'omdat er 's nachts iemand de trap op loopt'. Ze verkocht het binnen een week aan een liefhebber. Nu doet ze niets anders.",
+  vraagstuk: "\"Er zijn genoeg kopers die dit zoeken. Maar elke bezichtiging kost me een halve dag, en de helft komt alleen om te griezelen.\"",
   feiten: [
-    "Gemiddeld 380 klanten per dag, piek tussen 12:00 en 13:30",
-    "Een bestelling bakken duurt 3 minuten, kiezen gemiddeld 4",
-    "38% van de klanten neemt uiteindelijk toch mayonaise",
-    "Fred heeft een kassasysteem dat elke bestelling opslaat, sinds 2021",
-    "Populairste exotische saus: 'Oma Bep' (niemand weet wat erin zit)"
+    "18 verkochte 'bijzondere woningen' per jaar, gemiddeld 9% boven de vraagprijs",
+    "Op elke bezichtiging komen 6 kijkers, waarvan er gemiddeld 1 serieus is",
+    "Van elk huis heeft ze een dossier met verhalen, krantenknipsels en meldingen van vorige bewoners",
+    "Wachtlijst van kopers: 640 mensen, verspreid over Europa",
+    "Verkopers schamen zich vaak en willen anoniem blijven"
   ],
-  eigenaardigheid: "Fred onthoudt van vaste klanten welke saus ze nemen en zegt het hardop voordat ze iets bestellen. Meestal heeft hij gelijk. Mensen vinden dat het beste aan de kraam.",
-  beperking: "Fred heeft geen laptop en wil er ook geen. Het aantal sauzen gaat niet omlaag. Klantgegevens opslaan moet binnen de AVG.",
-  geprobeerd: "Een bord met 'Saus van de week'. Iedereen las het en vroeg toch wat de andere 46 waren.",
-  uitdaging: "Fred is zelf al een aanbevelingsalgoritme. Hoe zet je AI in zonder die menselijke truc weg te halen? Durf ook te concluderen dat de oplossing klein moet zijn."
+  eigenaardigheid: "Bij één huis in Oegstgeest staat de piano 's ochtends altijd net iets anders dan de avond ervoor. Annelies heeft er een timelapse-camera neergezet. Ze heeft de beelden nooit bekeken: 'dan is het verhaal weg'.",
+  beperking: "Annelies verkoopt verhalen, geen bewijs. Ze mag niets beloven of beweren wat niet klopt (consumentenrecht), en adressen blijven geheim tot een koper serieus is.",
+  geprobeerd: "Een virtuele 360-gradentour. Kijkers vonden het 'te licht' en 'niet eng genoeg'.",
+  uitdaging: "Dit is een bedrijf dat draait op wat je níet ziet. Hoe zet je AI in zonder het mysterie te verpesten, en zonder dat het nep wordt?"
 },
 
 {
@@ -675,62 +675,62 @@ window.CASES = [
 
 {
   id: "AI04", ton: "ai",
-  naam: "Ja Zeggen",
-  plaats: "Utrecht",
-  tagline: "Trouwambtenaren die voor elk stel een persoonlijke ceremonie schrijven. Twaalf uur werk per bruiloft.",
-  wie: "Vier zelfstandige trouwambtenaren onder één naam. Hun verkoopargument: elke ceremonie is helemaal persoonlijk, met interviews, anekdotes en grappen die alleen over dit stel gaan.",
-  vraagstuk: "\"We willen groeien, maar elke ceremonie kost twaalf uur schrijven. We kunnen er niet meer dan 140 per jaar aan.\"",
+  naam: "Duivenpost Express",
+  plaats: "Venray",
+  tagline: "Bezorgt trouwringen per postduif. Op 30% van de bruiloften komt de duif te laat.",
+  wie: "Jos (66) is al vijftig jaar duivenmelker. Sinds 2015 laat hij op bruiloften een duif de ringen naar het altaar brengen. Zijn kleinzoon Daan (24) doet de boekingen en wil er een echt bedrijf van maken.",
+  vraagstuk: "\"Stellen vinden het prachtig. Tot de duif twintig minuten op het dak van de kerk gaat zitten. We willen groeien, maar dan moet het betrouwbaarder.\"",
   feiten: [
-    "Prijs: €1.250 per ceremonie, inclusief twee kennismakingsgesprekken",
-    "140 ceremonies per jaar, 210 aanvragen geweigerd",
-    "De kennismakingsgesprekken worden opgenomen (met toestemming) en uitgetypt",
-    "Stellen noemen in reviews vooral 'het voelde alsof ze ons al jaren kenden'",
-    "Concurrent biedt ceremonies aan 'met AI geschreven' voor €450"
+    "Boekingen: 85 bruiloften per jaar à €390",
+    "Op 30% van de bruiloften landt de duif te laat; bij wind boven 4 Beaufort 60%",
+    "Jos heeft 40 duiven en weet van elke duif hoe ze vliegt, eet en zich gedraagt",
+    "Er wordt nu met een reserve-ring in de binnenzak van de getuige gewerkt",
+    "Video's van de duif op bruiloften worden veel gedeeld, maar zonder vermelding"
   ],
-  eigenaardigheid: "Elke ceremonie bevat één detail dat het stel niet aan de trouwambtenaar heeft verteld, maar dat via vrienden is achterhaald. Het moment waarop het stel dat hoort, staat op bijna elke trouwvideo.",
-  beperking: "Het team wil volledig eerlijk zijn tegenover stellen over hoe AI wordt gebruikt. De ceremonie zelf mag niet minder persoonlijk worden.",
-  geprobeerd: "Een trouwambtenaar liet ChatGPT een ceremonie schrijven als test. Het team vond het 'perfect en totaal zielloos'.",
-  uitdaging: "Je concurrent verkoopt AI als goedkoper. Jij moet AI inzetten om het duurdere product béter te maken. Waar in die twaalf uur zit het werk dat geen ziel nodig heeft?"
+  eigenaardigheid: "Duif nummer 17, Gerdientje, is nog nooit te laat geweest. Ze is gevraagd voor 140 bruiloften. Ze is 11 jaar en Jos wil haar niet meer laten vliegen.",
+  beperking: "Er mag niets aan de duiven worden bevestigd behalve de ring. Jos heeft geen smartphone en vertrouwt geen 'computerdingen'.",
+  geprobeerd: "Daan maakte een weer-app-checklist. Jos keek naar de lucht en zei 'dat klopt niet'.",
+  uitdaging: "Jos' kennis van 40 duiven zit in zijn hoofd en hij wordt 66. Wat kan AI hier, van boekingen tot voorspellingen tot verhalen, zonder dat het magische moment er saaier van wordt?"
 },
 
 {
   id: "AI05", ton: "ai",
-  naam: "Historische Vereniging Oud-Gouda",
-  plaats: "Gouda",
-  tagline: "80.000 handgeschreven pagina's, 340 leden, gemiddelde leeftijd 74.",
-  wie: "De vereniging beheert een archief met brieven, dagboeken en notulen uit vier eeuwen Gouda. Voorzitter Ans (69) wil dat jongere Goudanaars het archief ontdekken voordat de vereniging uitsterft.",
-  vraagstuk: "\"Er liggen hier verhalen die niemand kent. Maar niemand onder de vijftig komt ooit binnen.\"",
+  naam: "Het Nationaal Kaasschaafmuseum",
+  plaats: "Edam",
+  tagline: "1.400 kaasschaven. Elf bezoekers per dag.",
+  wie: "Oud-leraar Pieter (72) verzamelde zestig jaar lang kaasschaven en opende in 2020 een museum in zijn voormalige garage. Er zitten schaven tussen uit 1925, uit de Sovjet-Unie en een van goud. Zijn kleindochter Mila (22) runt de socials.",
+  vraagstuk: "\"Het museum moet blijven bestaan als opa er niet meer is. Daarvoor hebben we bezoekers nodig, en vooral: een reden om te komen.\"",
   feiten: [
-    "80.000 pagina's, waarvan 6% gedigitaliseerd",
-    "Het meeste is handgeschreven in oud schrift dat bijna niemand nog kan lezen",
-    "Leden: 340, er komen er per jaar 20 bij en 35 overlijden of stoppen",
-    "Grootste schat: het dagboek van een kaashandelaar uit 1672, 900 pagina's",
-    "Budget voor digitalisering: €3.000 per jaar"
+    "Bezoekers: 11 per dag, entree €6",
+    "Bij elke schaaf heeft Pieter een handgeschreven kaartje met het verhaal",
+    "80% van de bezoekers is toerist die per ongeluk binnenloopt",
+    "Een TikTok van Mila over de gouden schaaf kreeg 1,2 miljoen views, maar niemand kwam daardoor",
+    "Er komt elk jaar een Noorse delegatie op bezoek, omdat de kaasschaaf een Noorse uitvinding is"
   ],
-  eigenaardigheid: "De kaashandelaar uit 1672 schreef in zijn dagboek klachten over zijn buren, zijn vrouw en de kwaliteit van Leidse kaas. Het leest volgens Ans 'als een Twitter-account uit de Gouden Eeuw'.",
-  beperking: "Er zijn privacygevoelige stukken uit de 20e eeuw bij die niet openbaar mogen. Het bestuur is wantrouwig over AI en moet overtuigd worden.",
-  geprobeerd: "Een open dag met rondleidingen. Er kwamen 60 mensen, bijna allemaal al lid.",
-  uitdaging: "AI kan hier iets wat geen mens kan: 80.000 pagina's lezen. Maar wat moet er daarna gebeuren om een 25-jarige te laten luisteren naar een kaashandelaar?"
+  eigenaardigheid: "Pieter weet bij elke schaaf precies hoe dun hij schaaft, tot op de tiende millimeter. Hij laat bezoekers blind proeven en raden met welke schaaf de plak gesneden is. Niemand heeft er ooit meer dan twee goed.",
+  beperking: "Er is geen geld voor verbouwing. Pieter wil dat het museum 'serieus' blijft; hij vindt het geen grap.",
+  geprobeerd: "Een audiotour, ingesproken door Pieter. Hij praatte gemiddeld negen minuten per schaaf.",
+  uitdaging: "Je hebt een man, 1.400 objecten en 1,2 miljoen views die niks opleverden. Laat AI het gat dichten tussen 'grappig online' en 'ik moet erheen'."
 },
 
 {
   id: "AI06", ton: "ai",
-  naam: "Wandelwerk Hondenuitlaatservice",
-  plaats: "Haarlem",
-  tagline: "140 honden, elke wandeling met GPS gelogd. Niemand doet er iets mee.",
-  wie: "Iris (31) en vier uitlaters lopen dagelijks met 140 honden. Elke hond draagt een GPS-tracker zodat baasjes kunnen zien waar hun hond is. Dat genereert sinds drie jaar een berg data.",
-  vraagstuk: "\"We zitten vol en willen een tweede vestiging in Leiden. Maar ik heb geen idee wat ons nou echt anders maakt dan de andere uitlaatservices.\"",
+  naam: "Koor De Valse Noot",
+  plaats: "Arnhem",
+  tagline: "Een koor voor mensen die niet kunnen zingen. Boekbaar voor bedrijfsfeesten.",
+  wie: "Dirigent Marloes (44) richtte in 2018 een koor op voor mensen die als kind te horen kregen dat ze niet konden zingen. Er zijn nu 60 leden. Bedrijven boeken ze voor feesten en teambuilding, omdat het 'zo bevrijdend' is.",
+  vraagstuk: "\"We worden steeds vaker geboekt, maar we kunnen niet uitleggen wat we doen zonder dat het klinkt als een grap. En als je ons hoort, klinkt het ook als een grap.\"",
   feiten: [
-    "Ruim 45.000 gelogde wandelingen",
-    "Abonnement €220 per maand voor 5 wandelingen per week",
-    "Baasjes openen de GPS-app gemiddeld 6 keer per wandeling",
-    "Opzegpercentage: 5% per jaar, bijna altijd door verhuizing",
-    "Elke uitlater maakt per wandeling 3 tot 8 foto's die in een WhatsApp-groep gaan"
+    "Optredens: 34 per jaar, €1.800 per optreden",
+    "Workshop 'Zing vals met je team': 22 per jaar, €2.400",
+    "60 leden, wachtlijst van 90 mensen die ook willen meezingen",
+    "Opnames van het koor worden door algoritmes van muziekplatforms vaak als 'fout' gemarkeerd",
+    "Gemiddeld zingen leden 2,7 halve toon naast de melodie, en altijd dezelfde kant op"
   ],
-  eigenaardigheid: "Hond Boef loopt elke dag bijna precies dezelfde route. Op de GPS-kaart vormt die route iets wat sterk op een hart lijkt. Zijn baasje heeft het laten inlijsten.",
-  beperking: "Locatiedata van honden is ook locatiedata van hun baasjes (adres, werktijden). Niets daarvan mag herleidbaar naar buiten.",
-  geprobeerd: "Een maandelijkse nieuwsbrief met 'hond van de maand'. Leuk, maar niemand opende hem vaker dan één keer.",
-  uitdaging: "Je hebt 45.000 wandelingen aan data en duizenden foto's. Bedenk wat AI hiermee kan dat geen mens zou zien, en wat daarvan baasjes in Leiden over de streep trekt."
+  eigenaardigheid: "Bij hun bekendste nummer zingen 60 mensen zo consequent vals dat het samen bijna weer zuiver klinkt. Een muziekprofessor uit Utrecht heeft er een artikel over geschreven.",
+  beperking: "Geen enkele AI mag hun stemmen 'corrigeren' of mooier maken. Leden mogen niet herkenbaar in beeld zonder toestemming.",
+  geprobeerd: "Een promotievideo met het beste optreden. Bedrijven belden om te vragen of het een parodie was.",
+  uitdaging: "AI is gebouwd om dingen beter, mooier en zuiverder te maken. Dit koor is het tegenovergestelde. Hoe zet je technologie in voor iets dat juist níet geoptimaliseerd mag worden?"
 },
 
 {
@@ -795,42 +795,42 @@ window.CASES = [
 
 {
   id: "AI10", ton: "ai",
-  naam: "Radio Westland",
-  plaats: "Naaldwijk",
-  tagline: "Een lokale radiozender, 24 uur per dag in de lucht, met drie vrijwilligers.",
-  wie: "Radio Westland bestaat sinds 1984. Er werken drie vaste vrijwilligers en een handvol gastpresentatoren. 's Nachts draait er een playlist. De zender wil adverteerders aantrekken om te overleven.",
-  vraagstuk: "\"Lokale ondernemers willen wel adverteren, maar alleen als er mensen luisteren. En we kunnen niet laten zien wie er luistert.\"",
+  naam: "Huur-een-Oma",
+  plaats: "Groningen",
+  tagline: "Verhuurt oma's aan studenten. Voor koken, kletsen en 'heb je wel een jas aan'.",
+  wie: "Corrie (71) begon het als grap toen haar kleinzoon in Groningen ging studeren en zijn huisgenoten jaloers waren op haar bezoekjes. Nu werken er 38 oma's (en 4 opa's) voor €15 per uur. Ze koken, helpen met wasjes en vragen hoe het écht gaat.",
+  vraagstuk: "\"Er zijn meer studenten die een oma willen dan oma's. En de planning doe ik op papier, aan de keukentafel.\"",
   feiten: [
-    "Geschatte luisteraars: 6.000 per dag, vooral in de kassen en in de auto",
-    "Advertentie-inkomsten: €38.000 per jaar, nodig: €60.000",
-    "Het verzoekplatenprogramma op vrijdag is het best beluisterd",
-    "Er liggen 14.000 uur opgenomen uitzendingen sinds 1984 op harde schijven",
-    "Een AI-stem zou 's nachts kunnen presenteren, maar..."
+    "38 oma's en 4 opa's, gemiddeld 70 jaar",
+    "Boekingen: 160 per maand, wachtlijst 210 studentenhuizen",
+    "Veel boekingen worden gedaan door ouders van studenten, niet door de studenten zelf",
+    "Oma's hebben specialiteiten: stamppot, rouwverwerking, belastingaangifte, liefdesverdriet",
+    "In de tentamenweken verdubbelt de vraag"
   ],
-  eigenaardigheid: "In 2024 hielden ze een stemming onder luisteraars: willen jullie een AI-presentator 's nachts? 83% stemde nee. Maar 's nachts luisteren vooral tuinders die alleen in de kas werken, en die zeggen dat ze 'gewoon gezelschap' willen.",
-  beperking: "Geen AI-stem op de radio, dat hebben de luisteraars beslist. Adverteerders moeten eerlijke cijfers krijgen.",
-  geprobeerd: "Een luisteronderzoek via een online enquête. 112 reacties, allemaal van mensen die toch al fan waren.",
-  uitdaging: "De luisteraars willen geen AI-stem. Respecteer dat, en vind toch drie plekken waar AI deze zender redt. Bonus: doe iets met die 14.000 uur archief."
+  eigenaardigheid: "Oma Truida (79) heeft een vaste groep van zes studentenhuizen die haar 'de Raad van Truida' noemen. Ze komt elke maandag bij één ervan eten, en de andere vijf komen dan ook.",
+  beperking: "De oma's willen geen app. Persoonsgegevens van studenten en oma's mogen niet zomaar in een AI-tool. Het mag nooit een 'dienst' worden: het blijft persoonlijk.",
+  geprobeerd: "Een online boekingssysteem. De oma's zeiden dat ze het 'een beetje koud' vonden, en Corrie plande alles weer op papier.",
+  uitdaging: "De warmte van een oma is precies wat geen AI kan. Waar in dit bedrijf kan AI wél het verschil maken, zodat de oma's meer tijd hebben voor waar het om draait?"
 },
 
 {
   id: "AI11", ton: "ai",
-  naam: "Ontsnap",
-  plaats: "Leeuwarden",
-  tagline: "Een escaperoom met fanatieke vaste spelers die alle kamers al uit hun hoofd kennen.",
-  wie: "Rianne (39) en Thijs (41) hebben vier escape rooms. Hun beste klanten zijn een paar honderd fanatieke spelers die alles al hebben gedaan. Een nieuwe kamer bouwen kost €40.000 en een half jaar.",
-  vraagstuk: "\"Onze beste klanten komen niet meer, omdat er niks nieuws is. Maar we kunnen niet elk half jaar een kamer bouwen.\"",
+  naam: "Het Gevonden Voorwerpen Veilinghuis",
+  plaats: "Rotterdam",
+  tagline: "Veilt 12.000 verloren voorwerpen per jaar. Waaronder een prothesebeen en een kist vol kunstgebitten.",
+  wie: "Een veilinghuis dat de niet-opgehaalde gevonden voorwerpen van gemeenten, treinen en vliegvelden verkoopt. Veilingmeester Sandra (53) en twee medewerkers moeten alles fotograferen, beschrijven en in kavels verdelen.",
+  vraagstuk: "\"Telefoons en fietsen verkopen we wel. Maar 60% van wat we krijgen is zo raar dat niemand weet dat hij het wil hebben.\"",
   feiten: [
-    "4 kamers, gemiddelde bezetting 58%",
-    "Prijs: €28 per persoon",
-    "Een vaste kern van ongeveer 300 spelers deed alle vier de kamers",
-    "Reviews van herhaalspelers: 'te makkelijk als je het al kent'",
-    "De kamers hebben ingebouwde schermen, speakers en sensoren"
+    "12.000 voorwerpen per jaar, 4 veilingen",
+    "Beschrijven en fotograferen kost 6 minuten per voorwerp",
+    "Rare voorwerpen gaan nu in 'gemengde kavels' voor €5 tot €20",
+    "Bekendste kavel ooit: een opgezette zwaan met een zonnebril, verkocht voor €1.150 na een tweet",
+    "Kopers zijn vooral handelaren; particulieren weten niet dat de veiling bestaat"
   ],
-  eigenaardigheid: "Er is een groep van vijf gepensioneerde vrouwen ('De Sloten') die het record heeft in alle vier de kamers. Ze komen elke maand en zitten dan vooral koffie te drinken in de lobby.",
-  beperking: "Er is geen budget voor een nieuwe kamer. Puzzels moeten altijd oplosbaar blijven: frustratie is het nummer één reden voor slechte reviews.",
-  geprobeerd: "Een 'hard mode' met minder hints. Herhaalspelers vonden het hetzelfde, maar dan irritanter.",
-  uitdaging: "Je kunt de kamer niet verbouwen, maar wel wat erin gebeurt. Laat AI van vier vaste kamers oneindig veel spellen maken, en houd ze toch eerlijk oplosbaar."
+  eigenaardigheid: "Bij sommige voorwerpen zit een briefje of een verhaal: een trouwalbum van een onbekend stel uit 1961, een koffer met 40 identieke truien, een urn (leeg, gelukkig). Sandra vraagt zich bij elk voorwerp af wie het mist.",
+  beperking: "Er mogen geen persoonsgegevens van eigenaren zichtbaar zijn of herleid worden. Beschrijvingen moeten feitelijk kloppen: verzonnen verhalen bij echte voorwerpen mogen niet.",
+  geprobeerd: "Een Instagram met 'het vreemdste voorwerp van de week'. Veel volgers, maar die kopen niets.",
+  uitdaging: "Je hebt 12.000 raadsels per jaar. Laat AI van een berg rommel iets maken waar particulieren voor gaan bieden, en blijf daarbij eerlijk over wat je wél en niet weet."
 },
 
 {
@@ -875,22 +875,22 @@ window.CASES = [
 
 {
   id: "AI14", ton: "ai",
-  naam: "Zeilmakerij Wind & Wol",
-  plaats: "Harlingen",
-  tagline: "Maakt tassen van oude zeilen. Elke tas is uniek, en dat is precies het probleem.",
-  wie: "Fenna (36) koopt versleten zeilen van zeilboten en maakt er tassen van. Elk zeil heeft een verhaal: van welk schip, welke reizen. Elke tas is daardoor anders, met vlekken, nummers en reparaties.",
-  vraagstuk: "\"Ik maak 40 tassen per week. Ze moeten allemaal apart gefotografeerd, beschreven en online gezet worden. Ik ben meer tijd kwijt aan de webshop dan aan het naaien.\"",
+  naam: "Ballonvaart Hoog & Droog",
+  plaats: "Barneveld",
+  tagline: "Een ballonvaartbedrijf waarvan 70% van de vluchten wordt afgelast. De ballon heeft de vorm van een koe.",
+  wie: "Rob (58) en Ingrid (55) hebben drie luchtballonnen, waaronder 'Bertha', een ballon in de vorm van een Fries-Hollandse koe. Ze verkopen vooral cadeaubonnen. Het weer is hun grootste vijand.",
+  vraagstuk: "\"Mensen kopen een ballonvaart als cadeau en moeten dan vijf keer verzetten. Het wordt een frustratie in plaats van een cadeau.\"",
   feiten: [
-    "40 unieke tassen per week, prijs €90 tot €260",
-    "Per tas: 35 minuten fotograferen, bewerken en beschrijven",
-    "Van elk zeil weet ze het schip, en vaak de eigenaar en de reizen",
-    "Bestsellers: tassen met een zichtbaar zeilnummer of reparatie",
-    "Webshop-conversie: 1,1%"
+    "Cadeaubonnen per jaar: 2.100 à €220",
+    "70% van de geplande vluchten wordt afgelast (wind, regen, mist)",
+    "Een afgelaste vlucht wordt gemiddeld 3,4 keer verzet",
+    "Telefoontjes en mails over verzetten: 9.000 per jaar",
+    "Bertha de koe wordt overal gefilmd, ook als ze niet vliegt maar alleen opgeblazen wordt"
   ],
-  eigenaardigheid: "Eén zeil kwam van een boot die in 1998 rond de wereld zeilde. Er zaten 23 tassen in. Ze waren in twee uur uitverkocht, en kopers hebben nu een eigen WhatsApp-groep.",
-  beperking: "Productfoto's moeten de echte tas laten zien, inclusief vlekken. Geen AI-gegenereerde productbeelden.",
-  geprobeerd: "Productfoto's laten maken door een fotograaf. Mooi, maar €12 per tas en drie dagen vertraging.",
-  uitdaging: "Uniek is hier een kracht en een last. Gebruik AI om de last weg te nemen, en ontdek of het verhaal van het zeil nog veel harder kan verkopen dan nu."
+  eigenaardigheid: "Op dagen dat het niet kan vliegen, blazen ze Bertha soms op in de wei. Er komen dan honderden mensen kijken. Die dagen leveren meer nieuwe boekingen op dan vliegdagen.",
+  beperking: "Veiligheid gaat altijd voor; geen AI mag bepalen of er wel of niet gevlogen wordt, dat doet de piloot. Bonnen zijn 2 jaar geldig.",
+  geprobeerd: "Een automatische sms bij afgelasting. Klanten voelden zich 'afgescheept door een robot'.",
+  uitdaging: "Het product mislukt vaker dan het lukt. Laat AI van die mislukking iets maken wat mensen juist verder in het verhaal trekt, in plaats van ze te frustreren."
 },
 
 {
@@ -957,22 +957,22 @@ window.CASES = [
 
 {
   id: "CB03", ton: "consumer",
-  naam: "IJssalon Bella Luna",
-  plaats: "Scheveningen",
-  tagline: "Verkoopt per klant meer ijs als het regent.",
-  wie: "Giulia (45) runt een Italiaanse ijssalon op de boulevard. Op zonnige dagen staat er een rij, maar Dennis, haar boekhouder, ontdekte iets geks in de kassadata.",
-  vraagstuk: "\"Ik ben 's zomers uitverkocht en in de winter leeg. Ik wil het hele jaar door draaien, maar mensen eten geen ijs in de kou. Toch?\"",
+  naam: "Het Wachtrijbureau",
+  plaats: "Amsterdam",
+  tagline: "Verhuurt mensen die voor je in de rij staan. Steeds meer klanten willen zelf meewachten.",
+  wie: "Jamal (28) begon met in de rij staan voor limited sneakers voor vrienden. Nu heeft hij 70 'wachters' die voor klanten in de rij staan bij sneakerdrops, concertkaartjes, bakkerijen met hypes en zelfs bij de gemeente.",
+  vraagstuk: "\"Mijn bedrijf groeit, maar het rare is: klanten betalen ons en komen dan alsnog. Ze staan naast onze wachter in de rij.\"",
   feiten: [
-    "Omzet: 75% tussen mei en september",
-    "Op regenachtige dagen komen er 70% minder klanten, maar ze kopen gemiddeld 1,8 bolletjes meer",
-    "Op regendagen blijven klanten gemiddeld 34 minuten binnen, op zonnige dagen 4",
-    "Er staan maar 12 stoelen binnen",
-    "In november-februari is de zaak gesloten"
+    "Tarief: €18 per uur wachten",
+    "Opdrachten per maand: 1.100, waarvan 60% sneakers en streetwear",
+    "In 23% van de opdrachten komt de klant zelf ook en wacht mee",
+    "Klanten die meewachten, geven vaker fooi en boeken vaker opnieuw",
+    "Langste wachtopdracht ooit: 61 uur voor een sneaker van €190"
   ],
-  eigenaardigheid: "Op de regenachtigste dag van 2025 kwam een groep van acht Duitse toeristen binnen die er drie uur bleef, elk vier ijsjes at en Giulia's oma's recept voor tiramisu-ijs liet opschrijven.",
-  beperking: "Giulia maakt alleen ijs, geen warme gerechten, geen koffie-zaak. De zaak heeft geen terras dat overdekt kan worden.",
-  geprobeerd: "Een winteractie met 'warme chocolade bij je ijs'. Werd een koffiezaak, en daar zijn er al tien op de boulevard.",
-  uitdaging: "De regenklant gedraagt zich totaal anders dan de zonklant. Wie is die regenklant, waarom koopt hij meer, en hoe bouw je daar een seizoen omheen?"
+  eigenaardigheid: "Een vaste klant boekt elke maand een wachter voor de rij bij een bakkerij, haalt daarna zelf het brood en geeft de wachter het eerste croissantje. Ze zegt dat het wachten 'het lekkerste deel' is.",
+  beperking: "Jamal wil geen 'voordringen' aanbieden. De wachters mogen geen kaartjes doorverkopen.",
+  geprobeerd: "Een goedkoper tarief als de klant zelf meekomt. Niemand koos het.",
+  uitdaging: "Mensen betalen om niet te hoeven wachten en wachten dan toch. Wat kopen ze hier eigenlijk? Gebruik jouw topic om dat te verklaren en er een groeiplan van te maken."
 },
 
 {
@@ -997,22 +997,22 @@ window.CASES = [
 
 {
   id: "CB05", ton: "consumer",
-  naam: "Avonturia",
-  plaats: "Hellendoorn",
-  tagline: "Een klein pretpark waar bezoekers 70 minuten in de rij staan voor een attractie van 40 seconden.",
-  wie: "Familiepark met 14 attracties. Eén daarvan, 'De Draak', is een oude houten achtbaan. Alle andere attracties hebben nauwelijks een rij. Directeur Bart (49) wil dat bezoekers meer van het park zien.",
-  vraagstuk: "\"Mensen klagen over de rij bij De Draak, en tegelijk staan de andere attracties leeg. Ze komen voor één ding en gaan teleurgesteld naar huis.\"",
+  naam: "Het Grote Gras Kijken",
+  plaats: "Oirschot",
+  tagline: "Een evenement waar mensen een middag kijken hoe gras groeit. Drie jaar op rij uitverkocht.",
+  wie: "Wat begon als grap van een dorpsvereniging is uitgegroeid tot een jaarlijks evenement. 1.200 mensen zitten een middag op stoelen rond een veld en kijken naar gras. Er is geen programma. Er gebeurt niets.",
+  vraagstuk: "\"We willen naar twee dagen, of naar meerdere locaties. Maar we weten niet waarom mensen komen, dus we durven niets te veranderen.\"",
   feiten: [
-    "Bezoekers per jaar: 210.000",
-    "Gemiddelde rij bij De Draak in het hoogseizoen: 70 minuten",
-    "Bezoekers doen gemiddeld maar 4 van de 14 attracties",
-    "Een fastpass zou €8 kosten, 9% van de bezoekers zegt hem te willen",
-    "Bezoekerstevredenheid daalt met elke 10 minuten wachten"
+    "Kaarten: €24, 1.200 stuks, in 9 minuten uitverkocht",
+    "Op de doorverkoopmarkt gaan kaarten voor €80+",
+    "De gemiddelde bezoeker blijft 3 uur en 40 minuten",
+    "Telefoons worden bij de ingang ingeleverd (vrijwillig: 74% doet het)",
+    "Er is een 'gras-commentator' die af en toe fluistert wat er gebeurt"
   ],
-  eigenaardigheid: "Volgens camerabeelden lacht 40% van de mensen in de rij van De Draak. In de rij gebeurt meer dan in de rest van het park: mensen praten met vreemden, delen eten en wedden of ze gaan schreeuwen.",
-  beperking: "Geen nieuwe attractie, geen uitbreiding van De Draak. Fastpasses zijn een gevoelig punt: het bestuur wil niet dat rijkere gezinnen voorrang krijgen.",
-  geprobeerd: "Een bord met de wachttijd. Daardoor gingen mensen juist eerder in de rij staan.",
-  uitdaging: "Misschien is de rij niet het probleem. Onderzoek wat er in die rij met mensen gebeurt, en kijk of je de beleving kunt veranderen in plaats van de wachttijd."
+  eigenaardigheid: "In 2025 viel er een bal uit de lucht (van een voetbalveldje ernaast). Het publiek stond op en applaudisseerde vier minuten. Het is het enige moment in de geschiedenis van het evenement dat er iets 'gebeurde'.",
+  beperking: "Er mag niets aan het concept worden toegevoegd: geen muziek, geen sprekers, geen eten behalve wat je zelf meeneemt.",
+  geprobeerd: "Een livestream voor wie geen kaartje had. 40 kijkers, die bijna allemaal binnen vijf minuten afhaakten.",
+  uitdaging: "Een product waar letterlijk niets gebeurt, is drie jaar uitverkocht. Verklaar met jouw topic waarom, en durf te beslissen of opschalen het gedrag versterkt of kapotmaakt."
 },
 
 {
@@ -1037,62 +1037,62 @@ window.CASES = [
 
 {
   id: "CB07", ton: "consumer",
-  naam: "Filmhuis De Spiegel",
-  plaats: "Zutphen",
-  tagline: "Eén zaal, en de popcorn verkoopt het best bij documentaires over oorlog.",
-  wie: "Een filmhuis met één zaal van 90 stoelen, draaiende op 40 vrijwilligers en programmeur Wouter (37). Hij programmeert arthousefilms en documentaires, en heeft drie jaar kassadata.",
-  vraagstuk: "\"Mensen kopen een kaartje online en komen dan niet. Op sommige avonden zit de zaal 'uitverkocht' half leeg.\"",
+  naam: "Lege Doos",
+  plaats: "Den Haag",
+  tagline: "Een webshop die lege luxe verpakkingen verkoopt. Klanten zetten ze ongeopend in de kast.",
+  wie: "Vera (34) werkte bij een verpakkingsfabriek en zag dat de mooiste dozen werden weggegooid na het uitpakken. Ze begon dozen te verkopen zonder inhoud. Het idee: je stopt er zelf iets in. Maar dat doet bijna niemand.",
+  vraagstuk: "\"Ik verkoop dozen om iets in te geven. Maar de meeste klanten kopen ze voor zichzelf en doen er niets mee. Ik snap mijn eigen klanten niet.\"",
   feiten: [
-    "No-show: 18% van de online gekochte kaartjes",
-    "No-show is het hoogst bij films die als 'zwaar' of 'belangrijk' worden aangekondigd",
-    "Popcorn- en drankverkoop per bezoeker is het hoogst bij documentaires",
-    "Kaartjes kosten €11, terugbetalen kan niet",
-    "Leden (€8 per maand, onbeperkt) hebben een no-show van 31%"
+    "Verkochte dozen per maand: 3.400, prijs €12 tot €65",
+    "Uit een enquête: 61% van de dozen wordt nooit gevuld",
+    "Klanten kopen gemiddeld 4,1 dozen per jaar",
+    "Unboxing-video's van lege dozen krijgen meer views dan van gevulde",
+    "De best verkopende doos is zwart, zwaar, met magneetsluiting en een papieren lintje"
   ],
-  eigenaardigheid: "Het bestverkochte kaartje ooit was voor een documentaire van vier uur over een Poolse kolenmijn. De zaal was vol. Iedereen bleef. Niemand weet waarom.",
-  beperking: "Geen boetes voor no-show. Het programma blijft arthouse, geen blockbusters.",
-  geprobeerd: "Een herinneringsmail een dag vooraf. Geen meetbaar effect.",
-  uitdaging: "Waarom koopt iemand een kaartje voor een film die hij uiteindelijk niet wil zien? Zoek uit wat mensen eigenlijk kopen als ze een kaartje kopen, en gebruik dat."
+  eigenaardigheid: "Er is een klant die 212 dozen heeft gekocht en ze op kleur in een kast heeft staan. Ze stuurt Vera elke maand een foto van de kast.",
+  beperking: "Vera gaat geen inhoud verkopen. Duurzaamheid is een gevoelig punt: kritiek op 'verpakking zonder product' moet serieus genomen worden.",
+  geprobeerd: "Een campagne 'Geef iets moois in een mooie doos'. De verkoop daalde.",
+  uitdaging: "Mensen kopen niets, in een doos, en zijn er blij mee. Ontleed met jouw topic wat er in hun hoofd gebeurt, en bouw daar iets op dat ook de duurzaamheidskritiek overleeft."
 },
 
 {
   id: "CB08", ton: "consumer",
-  naam: "De Viskar van Kees",
-  plaats: "Den Helder",
-  tagline: "Een rijdende viswinkel die klanten volgen via WhatsApp-locatie.",
-  wie: "Kees (57) rijdt met een viskar door Noord-Holland. Klanten volgen zijn live-locatie via een WhatsApp-groep en lopen naar buiten als hij in de straat is. De vaste klanten zijn trouw, maar worden ouder.",
-  vraagstuk: "\"Mijn klanten zijn gemiddeld 68. Als ik geen jongere klanten krijg, ben ik over tien jaar klaar.\"",
+  naam: "Restaurant Geen Idee",
+  plaats: "Utrecht",
+  tagline: "Een restaurant zonder menukaart. Je weet pas wat je eet als het op tafel staat.",
+  wie: "Chef Joris (39) kookt elke avond één menu dat hij die middag bedenkt op basis van wat er op de markt was. Gasten krijgen bij reservering twee vragen: 'Wat eet je absoluut niet?' en 'Wat was het lekkerste wat je ooit at?'",
+  vraagstuk: "\"Wie één keer komt, is fan. Maar het is moeilijk om nieuwe mensen te laten reserveren voor iets waar ze niets over weten.\"",
   feiten: [
-    "WhatsApp-groep: 1.400 leden, verdeeld over 6 routes",
-    "30% van de klanten koopt elke week op dezelfde dag precies hetzelfde",
-    "Gemiddelde besteding €17",
-    "Jongere gezinnen in nieuwbouwwijken kennen de kar, maar kopen zelden",
-    "Klanten blijven gemiddeld 6 minuten kletsen bij de kar"
+    "40 couverts, 5 avonden per week, €65 per persoon",
+    "Bezetting: 78% vrijdag en zaterdag, 41% doordeweeks",
+    "Herhaalbezoek: 52% komt binnen een jaar terug",
+    "Bij reservering lezen 9 op de 10 mensen eerst alle reviews",
+    "Reviews mogen van Joris niets over de gerechten verklappen; de meeste gasten houden zich eraan"
   ],
-  eigenaardigheid: "Kees doet elke week één 'vergissing': hij geeft een klant per ongeluk iets extra's. Klanten weten dat hij het expres doet. Niemand zegt het.",
-  beperking: "De routes en tijden liggen vast. Kees gaat niet bezorgen en geen webshop beginnen.",
-  geprobeerd: "Een flyer in de nieuwbouwwijk met 'Verse vis aan huis'. 4 nieuwe klanten, die na twee keer wegbleven.",
-  uitdaging: "Oudere klanten kopen een gewoonte en een praatje, niet alleen vis. Wat zoekt een jong gezin, en hoe zorg je dat de kar voor hen ook een gewoonte wordt?"
+  eigenaardigheid: "Op de vraag 'wat was het lekkerste wat je ooit at' antwoordt een kwart van de gasten iets van hun oma. Joris probeert dan iets daarvan in hun gerecht te verwerken. Gasten huilen regelmatig aan tafel.",
+  beperking: "Er komt geen menukaart, ook niet online achteraf. Het restaurant gaat niet goedkoper.",
+  geprobeerd: "Een 'proefavond' met korting. Trok vooral mensen die op korting afkomen en niet terugkwamen.",
+  uitdaging: "Onzekerheid houdt nieuwe gasten tegen en maakt bestaande gasten fan. Gebruik jouw topic om die drempel om te draaien tot de reden om te komen."
 },
 
 {
   id: "CB09", ton: "consumer",
-  naam: "Sauna Stoom",
-  plaats: "Ede",
-  tagline: "Bezoekers blijven gemiddeld zes uur. De sauna wil meer mensen kwijt kunnen.",
-  wie: "Een grote wellnesssauna met tien sauna's, twee baden en een restaurant. Directeur Mirjam (46) zit op drukke dagen aan de maximale capaciteit, terwijl de wachtende gasten bij de deur boos worden.",
-  vraagstuk: "\"Ik wil meer gasten per dag, zonder mensen weg te jagen. Ze zijn hier om te ontspannen, niet om op de klok te kijken.\"",
+  naam: "Boom te Huur",
+  plaats: "Amersfoort",
+  tagline: "Verhuurt levende kerstbomen. Klanten geven hun boom een naam en willen volgend jaar dezelfde terug.",
+  wie: "Kweker Willem (49) verhuurt kerstbomen in een pot. Na de kerst komen ze terug naar zijn kwekerij en groeien ze verder. Hij begon voor de duurzaamheid, maar ontdekte iets anders.",
+  vraagstuk: "\"Klanten willen hun eigen boom terug. Dat is lief, maar ik kan niet 4.000 bomen per naam bijhouden. En 30% brengt hem niet terug.\"",
   feiten: [
-    "Dagkaart: €42, onbeperkt verblijf",
-    "Gemiddelde verblijfsduur: 6 uur 10 minuten",
-    "Restaurantbesteding piekt in het tweede uur en is na het vierde uur bijna nul",
-    "Op zaterdag worden 300 gasten weggestuurd",
-    "Gasten die lang blijven, geven lagere tevredenheidscijfers dan gasten die 4 uur blijven"
+    "Verhuurde bomen: 4.000 per jaar, €45 per seizoen",
+    "48% van de klanten vraagt om 'dezelfde boom als vorig jaar'",
+    "30% van de bomen komt niet terug; de borg (€20) wordt dan ingehouden",
+    "Bomen die terugkomen, groeien gemiddeld 25 cm per jaar",
+    "Niet-terugbrengers zeggen vaak dat ze 'het niet over hun hart konden verkrijgen'"
   ],
-  eigenaardigheid: "Gasten die na vier uur in de 'stilteruimte' gaan liggen, slapen daar gemiddeld 75 minuten. Er zijn gasten die de sauna gebruiken als slaapplek omdat ze thuis niet kunnen slapen.",
-  beperking: "Geen tijdslimiet op de dagkaart. Geen harde maatregelen zoals gasten uit bedden halen.",
-  geprobeerd: "Een goedkoper 'avondkaartje' vanaf 18:00. Werd vooral gekocht door mensen die toch al kwamen.",
-  uitdaging: "Gasten blijven langer dan goed voor ze is, en ze worden er niet gelukkiger van. Hoe help je mensen om zelf eerder te willen gaan, en er tevredener door te zijn?"
+  eigenaardigheid: "Er is een gezin dat al zeven jaar dezelfde boom huurt, 'Henk'. Henk is nu 2,40 meter en past niet meer in hun woonkamer. Ze hebben een gat in het plafond gezaagd.",
+  beperking: "Willem gaat geen bomen verkopen. De bomen moeten na de kerst terug om te overleven.",
+  geprobeerd: "Een hogere borg. Het percentage niet-terugbrengers bleef precies gelijk.",
+  uitdaging: "Klanten hechten zich zo aan een boom dat ze hem niet terug willen geven, terwijl dat juist slecht is voor de boom. Draai dat gedrag om met jouw topic."
 },
 
 {
@@ -1117,62 +1117,62 @@ window.CASES = [
 
 {
   id: "CB11", ton: "consumer",
-  naam: "Computermuseum Bits & Bytes",
-  plaats: "Eindhoven",
-  tagline: "Bezoekers besteden 80% van hun tijd aan één Tetris-machine.",
-  wie: "Een museum met 400 oude computers, gerund door een stichting van oud-Philips-ingenieurs. Conservator Hans (71) heeft prachtige teksten bij elk object geschreven. Bijna niemand leest ze.",
-  vraagstuk: "\"Mensen komen binnen, spelen Tetris en gaan weer weg. De rest van het museum zien ze niet.\"",
+  naam: "De Duurste Patat van Nederland",
+  plaats: "Heerenveen",
+  tagline: "Een frietkraam die €38 vraagt voor een patatje. Er staat elke dag een rij.",
+  wie: "Rudy (42) verkocht jarenlang gewone friet. In 2023 zette hij uit frustratie een 'luxe patat' op het bord voor €38: met truffel, goud en een saus van zeewier. Hij dacht dat niemand het zou bestellen. Nu is het zijn halve omzet.",
+  vraagstuk: "\"Ik weet niet of dit een hype is of een bedrijf. Moet ik doorgaan, duurder worden, of gaat het straks ineens weg?\"",
   feiten: [
-    "Bezoekers per jaar: 22.000",
-    "Gemiddelde bezoekduur: 55 minuten, waarvan 44 minuten bij de Tetris-hoek",
-    "De Tetris-hoek is het enige deel waar je iets mag aanraken",
-    "Bij de rest staan glazen vitrines en teksten van gemiddeld 280 woorden",
-    "Bezoekers zijn vooral vaders met kinderen tussen 8 en 14"
+    "Verkochte luxe patatjes: gemiddeld 60 per dag, alleen vrijdag en zaterdag",
+    "Een gewone patat (€3,50) verkoopt hij 300 keer per dag",
+    "84% van de luxe kopers deelt er een foto of video van",
+    "Hij kan er maar 60 per dag maken, door het goudblad",
+    "Klanten die een luxe patat kopen, kopen er bijna nooit een tweede"
   ],
-  eigenaardigheid: "Er staat een highscorelijst bij de Tetris-machine. De nummer één is al zes jaar een 74-jarige vrijwilliger, Ria. Kinderen komen terug om haar te verslaan. Niemand is het gelukt.",
-  beperking: "De meeste computers zijn te kwetsbaar om aan te raken. Er is geen geld voor schermen of interactieve installaties.",
-  geprobeerd: "Kortere teksten bij de vitrines. De bezoekduur daar ging van 1 naar 1,5 minuut.",
-  uitdaging: "Het museum denkt dat bezoekers moeten lezen. De bezoekers laten zien wat ze willen: doen, winnen, terugkomen. Bouw het museum om het gedrag heen, zonder ook maar één computer aan te raken."
+  eigenaardigheid: "In een blinde smaaktest vonden 7 van de 10 mensen de gewone patat lekkerder. Rudy heeft het resultaat ingelijst en in de kraam gehangen. De luxe patat verkocht daarna béter.",
+  beperking: "Rudy wil niet liegen over smaak of ingrediënten. De gewone friet blijft de basis van zijn zaak.",
+  geprobeerd: "Een middelduur 'semi-luxe patatje' van €12. Niemand kocht het.",
+  uitdaging: "Een product dat minder lekker is en duurder, verkoopt beter. Gebruik jouw topic om te verklaren wat mensen hier echt kopen, en of het blijvend kan zijn."
 },
 
 {
   id: "CB12", ton: "consumer",
-  naam: "Notariskantoor Van der Velde",
-  plaats: "Zwolle",
-  tagline: "Mensen stellen hun testament jarenlang uit. Tot er een begrafenis is.",
-  wie: "Notaris Marieke (49) ziet dat de meeste mensen geen testament hebben, terwijl ze het eigenlijk wel willen. Ze ziet ook wanneer ze ineens wél bellen.",
-  vraagstuk: "\"Iedereen weet dat het moet. Niemand doet het. En als ze het doen, is het vaak omdat het al bijna te laat is.\"",
+  naam: "Bowling De Scheve Baan",
+  plaats: "Joure",
+  tagline: "Een bowlingcentrum met één baan die scheef ligt. Iedereen wil op die baan.",
+  wie: "Familiebedrijf van Sietske (55) met acht bowlingbanen. Baan 6 is in 2009 verzakt en loopt licht naar links. Repareren kost €18.000. Sindsdien willen klanten alleen nog op baan 6.",
+  vraagstuk: "\"Op vrijdag staan mensen te wachten op baan 6, terwijl er zeven rechte banen leeg zijn. En ik weet niet of ik hem moet repareren of moet koesteren.\"",
   feiten: [
-    "Testamenten per jaar: 380, kosten €450 tot €900",
-    "62% van de nieuwe klanten belt binnen 2 maanden na de uitvaart van iemand in hun omgeving",
-    "Gemiddelde leeftijd bij eerste testament: 58",
-    "Mensen met jonge kinderen zonder testament: naar schatting meer dan de helft",
-    "Een eerste gesprek is gratis, maar wordt vaak afgezegd"
+    "Bezetting baan 6: 96%. Andere banen gemiddeld 44%",
+    "Reserveringen voor baan 6: tot 5 weken van tevoren",
+    "Gemiddelde score op baan 6 is 30% lager dan op de andere banen",
+    "Er zijn vaste teams die 'alleen op 6' spelen",
+    "Een verzekeraar heeft gevraagd of de baan wel veilig is (dat is hij)"
   ],
-  eigenaardigheid: "Klanten zeggen na afloop bijna allemaal hetzelfde: 'Dat viel mee'. Marieke heeft overwogen om dat op de deur te zetten.",
-  beperking: "Een notaris moet onafhankelijk en betrouwbaar blijven. Inspelen op angst of verdriet rond een overlijden is ethisch uitgesloten.",
-  geprobeerd: "Een folder 'Heeft u uw zaken goed geregeld?'. Ging volgens Marieke 'rechtstreeks het oud papier in, ongelezen'.",
-  uitdaging: "Je strijdt tegen uitstelgedrag, maar mag de sterkste trigger (een overlijden) niet gebruiken. Zoek een ander moment in het leven waarop mensen wél openstaan, en ontwerp daarvoor."
+  eigenaardigheid: "Er hangt een bord met het record op baan 6: 147 punten. Op de rechte banen ligt het record op 289. Het 147-record wordt veel vaker gefotografeerd.",
+  beperking: "Het bowlingcentrum kan niet groter. Er komen geen extra scheve banen bij (de verzekeraar).",
+  geprobeerd: "Een toeslag van €5 op baan 6. Mensen betaalden het zonder te morren, en de rest bleef leeg.",
+  uitdaging: "Een fout is het populairste product geworden. Leg met jouw topic uit waarom, en bedenk wat Sietske moet doen met de zeven 'perfecte' banen die niemand wil."
 },
 
 {
   id: "CB13", ton: "consumer",
-  naam: "Schoenenwinkel Stap",
-  plaats: "Maastricht",
-  tagline: "Klanten passen hier schoenen, maken een foto van het maatlabel en kopen online.",
-  wie: "Stap is een schoenenwinkel in de binnenstad, al 40 jaar in de familie. Eigenaar Luc (52) ziet steeds vaker dat klanten uitgebreid passen, advies krijgen en dan zonder iets te kopen vertrekken.",
-  vraagstuk: "\"Ik ben een gratis paskamer geworden voor Zalando. Mijn personeel geeft advies, en een webshop krijgt de omzet.\"",
+  naam: "Bakkerij Mislukt",
+  plaats: "Deventer",
+  tagline: "De misbaksels zijn eerder uitverkocht dan de goede koekjes.",
+  wie: "Bakker Hanneke (51) verkocht haar mislukte koekjes altijd voor €2 per zak, met een stickertje 'Mislukt'. Sinds een paar jaar is de zak met misbaksels om 10:00 op. De mooie koekjes blijven liggen.",
+  vraagstuk: "\"Ik ga toch niet expres dingen laten mislukken? Maar mijn goede koekjes verkopen slechter dan mijn fouten.\"",
   feiten: [
-    "Bezoekers per week: 900, conversie: 19% (was 35% in 2018)",
-    "Personeel ziet dagelijks klanten een foto maken van het label in de schoen",
-    "Prijzen zijn gelijk aan online, soms zelfs lager",
-    "Klanten die advies kregen van verkoper Ingrid kopen 2x vaker",
-    "Retourpercentage van online schoenen in Nederland ligt rond de 50%"
+    "Zakken 'Mislukt': 40 per dag, op om 10:00",
+    "Er staat een rij voor de deur van 7:30 tot opening om 8:00",
+    "Een doos goede koekjes (€8,50) verkoopt 25 keer per dag, er gaat 30% weg",
+    "Klanten die een zak 'Mislukt' kopen, kopen opvallend vaak ook nog iets anders",
+    "Ze kan niet meer misbaksels maken dan er 'vanzelf' mislukken: ongeveer 8% van de productie"
   ],
-  eigenaardigheid: "Ingrid (61) kan aan iemands manier van lopen zien welke schoen gaat knellen. Klanten noemen haar 'de voetfluisteraar'. Er zijn mensen die bellen om te vragen of ze werkt.",
-  beperking: "Geen pasgeld of verplichting om te kopen. De winkel gaat geen webshop beginnen.",
-  geprobeerd: "Een bordje 'Steun je lokale winkel'. Klanten vonden het zielig en voelden zich betrapt.",
-  uitdaging: "Waarom kopen mensen online als ze de schoen al in hun handen hebben, voor dezelfde prijs? Het is geen prijsprobleem. Ontdek wat het wel is."
+  eigenaardigheid: "Een klant vroeg of ze 'expres een beetje kon mislukken' voor zijn verjaardag. Hanneke weigerde. Hij kwam de volgende dag om 7:00 in de rij staan.",
+  beperking: "Hanneke gaat niet expres slecht bakken. Eerlijk is eerlijk: mislukt moet echt mislukt zijn.",
+  geprobeerd: "De goede koekjes in een zak met dezelfde sticker-stijl verkopen. Klanten zagen het meteen en voelden zich bedot.",
+  uitdaging: "De goede producten verliezen van de foute. Gebruik jouw topic om te verklaren wat die zak 'Mislukt' heeft, en hoe Hanneke dat kan inzetten zonder ooit te liegen."
 },
 
 {
@@ -1197,22 +1197,22 @@ window.CASES = [
 
 {
   id: "CB15", ton: "consumer",
-  naam: "Supermarkt Dorpsplein",
-  plaats: "Ootmarsum",
-  tagline: "Een dorpssupermarkt waar klanten de duurste versie van alles kopen, behalve op maandag.",
-  wie: "Een zelfstandige supermarkt in een toeristisch dorp, gerund door Erik (46). Hij heeft drie jaar kassadata en snapt er weinig van. Hij wil weten hoe hij zijn assortiment moet inrichten.",
-  vraagstuk: "\"Ik heb te veel van het verkeerde en te weinig van het goede. Maar het goede verschilt per dag.\"",
+  naam: "Snoepwinkel Opa's Pot",
+  plaats: "Hoorn",
+  tagline: "Een snoepwinkel waar volwassenen meer uitgeven dan kinderen. En stiekem snoepen voor ze afrekenen.",
+  wie: "Henny (63) verkoopt al 30 jaar snoep uit 180 grote glazen potten, per gram afgewogen. De winkel ziet eruit als in 1965. Haar klanten zijn steeds vaker dertigers en veertigers zonder kinderen.",
+  vraagstuk: "\"Mijn klanten worden ouder, en ze komen voor een gevoel, niet voor snoep. Maar dat gevoel kan ik niet online verkopen, en de huur stijgt.\"",
   feiten: [
-    "Klanten: 60% toeristen in het seizoen, 85% inwoners daarbuiten",
-    "Van dinsdag tot zondag wordt in 8 van de 10 productgroepen vaker de duurste variant gekocht",
-    "Op maandag koopt bijna iedereen het huismerk",
-    "De duurste wijn verkoopt het best als hij op de onderste plank staat",
-    "Toeristen kopen gemiddeld 2,3 keer zoveel 'lokale producten' als inwoners, maar pas na 16:00"
+    "Gemiddelde besteding: kinderen €3,40, volwassenen €11,80",
+    "65% van de volwassen klanten koopt snoep dat 'ze vroeger ook kochten'",
+    "Volwassenen blijven gemiddeld 14 minuten in de winkel, kinderen 5",
+    "Meer dan de helft van de volwassenen eet al een snoepje voordat ze betalen",
+    "Toeristen kopen vooral drop, maar eten het zelden op"
   ],
-  eigenaardigheid: "Bij de kassa staat een mand met 'Ootmarsumse dropjes' die Erik in een grote supermarkt koopt en zelf verpakt. Het is zijn bestverkopende product.",
-  beperking: "De winkel kan niet groter. Misleiding over herkomst mag niet: de dropjes moeten eerlijk worden geëtiketteerd.",
-  geprobeerd: "Elke maand een thema-actie. Sloeg alleen aan bij thema's die toevallig samenvielen met het weekend.",
-  uitdaging: "Er zitten minstens drie verschillende klanten in deze winkel die zich elk anders gedragen. Vind ze, verklaar hun gedrag, en ontwerp een winkel die met dag en tijd meebeweegt. Wat doe je eerlijk met die dropjes?"
+  eigenaardigheid: "De weegschaal staat al dertig jaar drie gram in het voordeel van de klant. Henny weet het. Vaste klanten weten het ook. Niemand zegt er iets over.",
+  beperking: "De winkel blijft er precies zo uitzien. Henny gaat niet bezorgen en wil geen 'retro-concept' worden.",
+  geprobeerd: "Een webshop met 'snoep van vroeger'. Verkocht 30 zakken in een half jaar.",
+  uitdaging: "Volwassenen gedragen zich hier als kinderen en kinderen als volwassenen. Gebruik jouw topic om te verklaren wat er in die 14 minuten gebeurt, en hoe die winkel daarop kan overleven."
 }
 
 ];
