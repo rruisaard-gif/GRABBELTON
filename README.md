@@ -2,7 +2,7 @@
 
 De grabbelton voor **Achievement 2 – Grabbelton Casus** van de expertisetrack in de minor *Marketing in een online wereld* (RBSMOW01).
 
-Studenten kiezen hun expertise (Branding of Content), rammen op de knop tot de hand diep in de ton graait, laten los en trekken er een casus uit. Op het briefje staan de datum van trekken en de inleverdatum (een week later).
+Studenten kiezen hun expertise (Branding of Content), rammen op de knop tot de hand diep in de ton graait, laten los en trekken er een casus uit. Op het briefje staat de datum en tijd van trekken.
 
 ## Bestanden
 

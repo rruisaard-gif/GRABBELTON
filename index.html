@@ -467,10 +467,10 @@ h1 .pix { font-family: var(--f-pixel); font-weight: 700; font-stretch: normal; c
   function fmt(d) { return d.toLocaleDateString("nl-NL", { weekday: "short", day: "numeric", month: "long" }); }
 
   function renderCase(c) {
-    var d = c._getrokken, due = new Date(d.getTime() + 7 * 864e5);
+    var d = c._getrokken;
     $("paper").innerHTML =
       '<div class="meta"><span class="stamp">' + esc(c.id) + ' · ' + (c.ton === "branding" ? "BRANDING" : "CONTENT") + '</span>' +
-      '<span class="when">Getrokken ' + fmt(d) + ' ' + d.toLocaleTimeString("nl-NL", { hour: "2-digit", minute: "2-digit" }) + ' · inleveren uiterlijk ' + fmt(due) + '</span></div>' +
+      '<span class="when">Getrokken ' + fmt(d) + ' ' + d.toLocaleTimeString("nl-NL", { hour: "2-digit", minute: "2-digit" }) + '</span></div>' +
       '<h3>' + esc(c.naam) + '</h3><div class="plaats">' + esc(c.plaats) + '</div>' +
       '<p class="tag">' + esc(c.tagline) + '</p>' +
       '<div class="sect"><h4>Wie zijn ze</h4><p>' + esc(c.wie) + '</p></div>' +
