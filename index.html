@@ -84,6 +84,19 @@ h1 .pix { font-family: var(--f-pixel); font-weight: 700; font-stretch: normal; c
 .tonbtn .t { font-family: var(--f-head); font-weight: 800; font-stretch: 75%; font-size: 32px; text-transform: uppercase; line-height: 1; }
 .tonbtn .d { color: var(--muted); font-size: 14px; }
 .tonbtn .n { font-family: var(--f-mono); font-size: 12px; color: var(--cyan); letter-spacing: .08em; }
+.topiclabel { display: block; margin: 0 0 10px; }
+.topicin {
+  width: 100%; max-width: 760px; font: inherit; font-size: 20px; color: var(--ink);
+  background: var(--space-2); border: 2px solid var(--violet); border-radius: 4px; padding: 12px 14px;
+}
+.topicin::placeholder { color: var(--muted); opacity: .7; }
+.topicin:focus { outline: none; border-color: var(--cyan); }
+.topicin.err { border-color: var(--red); }
+.topicerr { color: var(--red); font-family: var(--f-mono); font-size: 13px; margin: 8px 0 0; }
+.paper .topic { margin-top: 14px; display: inline-flex; gap: 8px; align-items: baseline; background: var(--paper-ink); color: var(--paper); padding: 4px 10px; font-weight: 600; }
+.paper .topic span { font-family: var(--f-mono); font-size: 11px; letter-spacing: .14em; color: var(--cyan); }
+.boss .prikkel { margin-top: 10px; }
+.boss .prikkel b { color: var(--cyan); font-weight: 600; }
 .rules { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 16px; max-width: 820px; width: 100%; border-top: 1px solid var(--violet); padding-top: 18px; }
 .rules div { min-width: 0; font-size: 14px; color: var(--muted); }
 .rules b { display: block; font-family: var(--f-pixel); font-weight: 400; color: var(--ink); font-size: 13px; margin-bottom: 4px; }
@@ -188,7 +201,10 @@ h1 .pix { font-family: var(--f-pixel); font-weight: 700; font-stretch: normal; c
     <h1><span class="pix">de grote</span>Grabbelton</h1>
     <p class="lead">Ergens in deze ton zit een ondernemer met een probleem waar je nog nooit over hebt nagedacht. <strong>Jij krijgt een week</strong> om je expertise erop los te laten. Wat eruit komt, moet je doen.</p>
     <div>
-      <p class="eyebrow cyan" style="margin:0 0 10px">Kies jouw expertise</p>
+      <label class="eyebrow cyan topiclabel" for="topic">1. Wat is jouw expertisetopic?</label>
+      <input id="topic" class="topicin" type="text" maxlength="60" autocomplete="off" placeholder="bijv. schaarste of merkvoorkeur">
+      <p class="topicerr" id="topicerr" hidden>Vul eerst je topic in. Daar ga je de casus mee te lijf.</p>
+      <p class="eyebrow cyan" style="margin:22px 0 10px">2. Kies jouw expertise</p>
       <div class="choose" id="choose"></div>
     </div>
     <div class="rules">
@@ -252,6 +268,10 @@ h1 .pix { font-family: var(--f-pixel); font-weight: 700; font-stretch: normal; c
   addEventListener("resize", sizeStars); sizeStars();
 
   // ---------------- data / trekken ----------------
+  var currentTopic = "";
+  try { var savedTopic = localStorage.getItem("grabbel-topic"); if (savedTopic) $("topic").value = JSON.parse(savedTopic); } catch (e) {}
+  $("topic").addEventListener("input", function () { this.classList.remove("err"); $("topicerr").hidden = true; });
+
   // De vier tonnen. Nieuwe ton? Voeg hier een regel toe en geef casussen in cases.js dezelfde 'ton'.
   var TONS = {
     branding: { label: "Branding", stamp: "BRANDING", desc: "Merken die ergens over gaan, ook als het bedrijf raar is." },
@@ -267,7 +287,12 @@ h1 .pix { font-family: var(--f-pixel); font-weight: 700; font-stretch: normal; c
     b.querySelector(".t").textContent = TONS[t].label;
     b.querySelector(".d").textContent = TONS[t].desc;
     b.querySelector(".n").textContent = n + " casussen in de ton";
-    b.addEventListener("click", function () { openTon(t); });
+    b.addEventListener("click", function () {
+      var v = $("topic").value.trim();
+      if (!v) { $("topic").classList.add("err"); $("topicerr").hidden = false; $("topic").focus(); return; }
+      currentTopic = v; store("grabbel-topic", v);
+      openTon(t);
+    });
     $("choose").appendChild(b);
   });
   function store(k, v) { try { if (v === undefined) return JSON.parse(localStorage.getItem(k) || "null"); localStorage.setItem(k, JSON.stringify(v)); } catch (e) { return null; } }
@@ -476,22 +501,24 @@ h1 .pix { font-family: var(--f-pixel); font-weight: 700; font-stretch: normal; c
       '<span class="when">Getrokken ' + fmt(d) + ' ' + d.toLocaleTimeString("nl-NL", { hour: "2-digit", minute: "2-digit" }) + '</span></div>' +
       '<h3>' + esc(c.naam) + '</h3><div class="plaats">' + esc(c.plaats) + '</div>' +
       '<p class="tag">' + esc(c.tagline) + '</p>' +
+      '<div class="topic"><span>JOUW TOPIC</span>' + esc(currentTopic) + '</div>' +
       '<div class="sect"><h4>Wie zijn ze</h4><p>' + esc(c.wie) + '</p></div>' +
       '<div class="sect"><h4>Het vraagstuk</h4><p class="quote">' + esc(c.vraagstuk) + '</p></div>' +
       '<div class="sect"><h4>Feiten &amp; cijfers</h4><ul>' + c.feiten.map(function (f) { return "<li>" + esc(f) + "</li>"; }).join("") + '</ul></div>' +
       '<div class="box weird"><h4>De eigenaardigheid</h4><p>' + esc(c.eigenaardigheid) + '</p></div>' +
       '<div class="box"><h4>De beperking</h4><p>' + esc(c.beperking) + '</p></div>' +
       '<div class="sect"><h4>Al geprobeerd</h4><p>' + esc(c.geprobeerd) + '</p></div>' +
-      '<div class="boss"><h4>&gt; JOUW UITDAGING</h4><p>' + esc(c.uitdaging) + '</p>' +
+      '<div class="boss"><h4>&gt; JOUW OPDRACHT</h4><p>Laat zien wat <strong>' + esc(currentTopic) + '</strong> betekent voor ' + esc(c.naam) + '. Lijkt dat ver van je bed? Dan is dat precies de opdracht: vind de ingang die een ander niet ziet.</p>' +
+      '<p class="prikkel"><b>Extra prikkel:</b> ' + esc(c.uitdaging) + '</p>' +
       '<p class="huh">Huh-test: kan een vergelijkbaar bedrijf, of een AI-tool met één simpele prompt, jouw idee ook bedenken? Dan ben je nog niet klaar.</p></div>';
   }
 
   function caseText(c) {
-    return [c.id + " · " + c.naam + " (" + c.plaats + ")", c.tagline, "",
+    return [c.id + " · " + c.naam + " (" + c.plaats + ")", c.tagline, "", "JOUW TOPIC: " + currentTopic, "",
       "WIE ZIJN ZE", c.wie, "", "HET VRAAGSTUK", c.vraagstuk, "",
       "FEITEN & CIJFERS"].concat(c.feiten.map(function (f) { return "- " + f; }))
       .concat(["", "DE EIGENAARDIGHEID", c.eigenaardigheid, "", "DE BEPERKING", c.beperking, "",
-        "AL GEPROBEERD", c.geprobeerd, "", "JOUW UITDAGING", c.uitdaging, "",
+        "AL GEPROBEERD", c.geprobeerd, "", "JOUW OPDRACHT", "Laat zien wat " + currentTopic + " betekent voor " + c.naam + ". Lijkt dat ver van je bed? Dan is dat precies de opdracht: vind de ingang die een ander niet ziet.", "Extra prikkel: " + c.uitdaging, "",
         "Getrokken: " + c._getrokken.toLocaleString("nl-NL")]).join("\n");
   }
 
