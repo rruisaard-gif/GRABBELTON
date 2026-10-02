@@ -2,7 +2,7 @@
 
 De grabbelton voor **Achievement 2 – Grabbelton Casus** van de expertisetrack in de minor *Marketing in een online wereld* (RBSMOW01).
 
-Studenten vullen eerst hun expertisetopic in (bijv. schaarste of merkvoorkeur), kiezen hun expertise (Branding, Content, AI in Marketing of Consumer Behavior), rammen op de knop tot de hand diep in de ton graait, laten los en trekken er een casus uit. Op het briefje staat de datum en tijd van trekken.
+Studenten kiezen een ton (Branding, Content, AI in Marketing of Consumer Behavior), rammen op de knop tot de hand diep in de ton graait, laten los en trekken er een casus uit. Op het briefje staat de datum en tijd van trekken.
 
 ## Bestanden
 
